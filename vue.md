@@ -1,4 +1,4 @@
-# 在使用Vue+ElementUI+Vuex+Vue-Router中遇到的问题以及解决  
+## 在使用Vue+ElementUI+Vuex+Vue-Router中遇到的问题以及解决  
 初学Vue，直接实战，目前为止遇到一些问题总结。  
 * 使用vue-cli最新版本时，执行`npm run dev`出现错误，执行`npm run build`无错。研究cmd的错误提示以及源码中build文件夹下的代码，最后在其中的`dev-server.js`中打印了`process.env.NODE_ENV`信息，结果显示`production`。修改`package.json`文件scripts中的配置`"dev": "set NODE_ENV=development&&node build/dev-server.js",` 开发模式正常执行。  
 * 使用v-for时，不能在一个组件template的根元素上绑定。  
@@ -13,4 +13,6 @@ entry: {
 * 当你使用了Vuex时,修改state中的数据时，不能直接通过赋值来修改，而是通过dispatch action来修改状态，并且在Vuex中修改一个数组的数据时，是不能直接赋值修改的。由于 JavaScript 的限制， Vue 不能检测以下变动的数组，所以可以使用splice修改来达到watch的效果。  
 [注意事项](https://cn.vuejs.org/v2/guide/list.html#注意事项)  
 （未完待续）  
+
+
 个人认为如果你接触过React那一套和Angular，学习Vue成本很低。因为Vue有很多其他框架的一些特性，响应式组件化思想，Angular的指令，template，React的虚拟DOM，Vuex和Redux也是相同的思想，React需要用JSX写，但Vue则拥抱html。
