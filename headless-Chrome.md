@@ -1,5 +1,5 @@
 # Windows下使用Headless Chrome  
-google在4月的时候宣布他们将在chrome 59中支持headless模式，headless模式即chromr会以一种静默的模式激动，他不会启用界面，但是他在后台的行为与正常浏览器一样。  
+google在4月的时候宣布他们将在chrome 59中支持headless模式，headless模式即chrome会以一种静默的模式启动，他不会启用界面，但是他在后台的行为与正常浏览器一样。  
 ## 准备  
 安装一个支持headless的chrome版本，我使用的是chrome canary，是chrome的实验版本，新的特性一版都会最新添加在里面。  
 ## 启动  
